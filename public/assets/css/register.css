@@ -1,0 +1,125 @@
+.heading {
+    margin-bottom: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+.heading .card-title {
+    font-weight: 600;
+    font-size: 24px;
+    color: #1e293b;
+}
+
+.heading .card-text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #1e293b;
+}
+
+.form-control,
+.form-select {
+    background-color: #ffffff;
+}
+
+.form-control:hover,
+.form-select:hover {
+    background-color: #F8FAFC;
+}
+
+.form-control.cek-valid,
+.form-select.cek-valid,
+.form-control:focus,
+.form-select:focus {
+    border-color: #42B549;
+    background-color: #F8FAFC;
+}
+
+.form-control:focus,
+.form-select:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    color: #999;
+    text-transform: none !important;
+}
+
+.form-control[name="username"],
+.form-control[name="email"] {
+    text-transform: lowercase;
+}
+
+.form-control.is-invalid:focus,
+.form-select.is-invalid:focus {
+    box-shadow: none;
+}
+
+.form-control label {
+    font-family: 'Poppins';
+}
+
+.input-group .input-group-text {
+    background-color: #fff;
+}
+
+.input-group:hover .form-control,
+.input-group:hover .input-group-text {
+    background-color: #F8FAFC;
+}
+
+.input-group .form-control.cek-valid~.input-group-text,
+.input-group .form-control:focus~.input-group-text {
+    border-color: #42B549;
+    background-color: #F8FAFC;
+}
+
+.input-group .form-control.is-invalid~.input-group-text {
+    border-color: #dc3545;
+}
+
+.step {
+    display: none;
+    animation: animate 0.5s;
+}
+
+@keyframes animate {
+    from {
+        transform: scale(1, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+
+.step-active {
+    display: block;
+}
+
+.btn-success {
+    font-family: 'Poppins';
+    background-color: #42B549;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
+    background-color: #2E912F !important;
+}
+
+@media (min-width: 450px) and (max-width: 576px) {
+    .col-xs {
+        flex: 0 0 auto;
+        width: 83.33333333%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.9px) {
+    .col-lg-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+    }
+}
